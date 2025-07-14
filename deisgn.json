@@ -1,0 +1,110 @@
+{
+  "brand": {
+    "primaryColor": "#FF0000",
+    "secondaryColor": "#000000",
+    "accentColor": "#FFFFFF",
+    "supportColors": ["#333333", "#777777", "#F7F7F7"]
+  },
+  "typography": {
+    "fontFamily": "sans-serif, likely Arial or Helvetica",
+    "fontWeights": {
+      "body": 400,
+      "heading": 600
+    },
+    "fontSizes": {
+      "body": "16px",
+      "h1": "32px",
+      "h2": "24px",
+      "h3": "20px"
+    },
+    "lineHeight": 1.5
+  },
+  "layout": {
+    "containerWidth": "max 1200px centered",
+    "grid": {
+      "columns": 12,
+      "gutter": "20px"
+    },
+    "spacing": {
+      "padding": "20px",
+      "margin": "20px"
+    }
+  },
+  "components": {
+    "navigationBar": {
+      "position": "top-fixed",
+      "background": "white",
+      "linkStyle": {
+        "color": "#333333",
+        "hoverColor": "#FF0000",
+        "weight": 600
+      }
+    },
+    "buttons": {
+      "primary": {
+        "background": "#FF0000",
+        "color": "#FFFFFF",
+        "borderRadius": "4px",
+        "padding": "10px 20px"
+      },
+      "secondary": {
+        "background": "transparent",
+        "color": "#FF0000",
+        "border": "2px solid #FF0000",
+        "borderRadius": "4px",
+        "padding": "10px 20px"
+      }
+    },
+    "cards": {
+      "bgColor": "#FFFFFF",
+      "shadow": "0 2px 8px rgba(0,0,0,0.1)",
+      "borderRadius": "6px",
+      "imageRatio": "4:3",
+      "titleStyle": {
+        "fontSize": "20px",
+        "weight": 600,
+        "color": "#333333"
+      },
+      "bodyStyle": {
+        "fontSize": "16px",
+        "color": "#777777"
+      }
+    },
+    "heroSection": {
+      "fullWidth": true,
+      "height": "60vh",
+      "overlay": "rgba(0,0,0,0.3)",
+      "headingStyle": {
+        "fontSize": "48px",
+        "color": "#FFFFFF",
+        "weight": 600
+      },
+      "subheadingStyle": {
+        "fontSize": "24px",
+        "color": "#FFFFFF"
+      }
+    }
+  },
+  "imagery": {
+    "style": "high-resolution photography",
+    "subjects": [
+      "security staff in uniform",
+      "on-site operations",
+      "equipment"
+    ],
+    "treatment": "natural colors, slight desaturation",
+    "shapes": "rectangular with rounded corners in cards"
+  },
+  "iconography": {
+    "style": "simple line icons",
+    "stroke": "2px",
+    "color": "#FF0000"
+  },
+  "footer": {
+    "bgColor": "#333333",
+    "textColor": "#FFFFFF",
+    "linkColor": "#F7F7F7",
+    "padding": "40px",
+    "columns": 4
+  }
+}

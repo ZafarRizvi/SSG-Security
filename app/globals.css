@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #ff0000;
+    --secondary: #000000;
+    --accent: #ffffff;
+    --support-1: #333333;
+    --support-2: #777777;
+    --support-3: #f7f7f7;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f7f7f7;
+    --text-primary: #333333;
+    --text-secondary: #777777;
+    --border-color: #e5e7eb;
+  }
+
+  [data-theme="dark"] {
+    --primary: #ff4444;
+    --secondary: #ffffff;
+    --accent: #1f2937;
+    --support-1: #f9fafb;
+    --support-2: #d1d5db;
+    --support-3: #374151;
+    --bg-primary: #111827;
+    --bg-secondary: #1f2937;
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --border-color: #374151;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+@layer components {
+  .container-custom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-accent px-5 py-2.5 rounded font-semibold hover:bg-red-700 transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent text-primary border-2 border-primary px-5 py-2.5 rounded font-semibold hover:bg-primary hover:text-accent transition-colors duration-200;
+  }
+
+  .card {
+    @apply bg-accent shadow-lg rounded-lg overflow-hidden;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+  }
+
+  .nav-link {
+    @apply text-support-1 font-semibold hover:text-primary transition-colors duration-200;
+    color: var(--text-primary);
+  }
+
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .dark .hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .theme-toggle {
+    @apply p-2 rounded-lg transition-colors duration-200;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+  }
+
+  .theme-toggle:hover {
+    background-color: var(--border-color);
+  }
+}
