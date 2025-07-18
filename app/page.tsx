@@ -84,7 +84,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden sm:h-[80vh]">
+      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden sm:h-[60vh]">
         {/* Hero Background Image */}
         <div className="absolute inset-0">
           <div className="relative w-full h-full">
