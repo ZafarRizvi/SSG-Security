@@ -8,8 +8,11 @@ import {
   FaBuilding,
   FaPhone,
 } from "react-icons/fa";
+import siteInfo from "../siteInfo.json";
 
 export default function Home() {
+  const { contact } = siteInfo;
+
   const features = [
     {
       icon: <FaShieldAlt className="text-4xl text-primary" />,
@@ -81,7 +84,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden sm:h-[80vh]">
         {/* Hero Background Image */}
         <div className="absolute inset-0">
           <div className="relative w-full h-full">
@@ -291,7 +294,7 @@ export default function Home() {
               Contact Us
             </Link>
             <a
-              href="tel:+441234567890"
+              href={`tel:${contact.phone}`}
               className="btn-primary flex items-center justify-center gap-2"
             >
               <FaPhone />

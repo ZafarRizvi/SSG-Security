@@ -53,6 +53,7 @@ export default function Contact() {
     "Reception Concierge",
     "Short Notice Services",
     "Static / Mobile Patrol",
+    "Other",
   ];
 
   return (
@@ -217,9 +218,9 @@ export default function Contact() {
                     <h3 className="font-semibold text-text-primary mb-1">
                       Phone
                     </h3>
-                    <p className="text-text-secondary">+44 123 456 7890</p>
+                    <p className="text-text-secondary">+44 744 5611726</p>
                     <p className="text-sm text-text-secondary">
-                      24/7 Emergency: +44 123 456 7891
+                      24/7 Emergency: +44 744 5611726
                     </p>
                   </div>
                 </div>
@@ -232,8 +233,12 @@ export default function Contact() {
                     <h3 className="font-semibold text-text-primary mb-1">
                       Email
                     </h3>
-                    <p className="text-text-secondary">info@securepro.com</p>
-                    <p className="text-text-secondary">sales@securepro.com</p>
+                    <p className="text-text-secondary">
+                      info@instant-support-services.com
+                    </p>
+                    <p className="text-text-secondary">
+                      Instanstservices313@gmail.com
+                    </p>
                   </div>
                 </div>
 
@@ -246,13 +251,13 @@ export default function Contact() {
                       Address
                     </h3>
                     <p className="text-text-secondary">
-                      SecurePro Security Services
+                      Instant Support Services (ISS)
                       <br />
-                      123 Security Street
+                      225 Barnes Hill
                       <br />
-                      London, SW1A 1AA
+                      B29 5UJ
                       <br />
-                      United Kingdom
+                      Birmingham
                     </p>
                   </div>
                 </div>
@@ -293,10 +298,10 @@ export default function Contact() {
                   immediately.
                 </p>
                 <a
-                  href="tel:+441234567891"
+                  href="tel:+447445611726"
                   className="inline-block bg-red-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors"
                 >
-                  Emergency: +44 123 456 7891
+                  Emergency: +44 744 5611726
                 </a>
               </div>
             </div>

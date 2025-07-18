@@ -1,0 +1,23 @@
+{
+  "companyName": "Instant Secure Services Ltd.",
+  "companyLogo": "/images/logo.png",
+  "contact": {
+    "phone": "+44 744 5611726",
+    "email": "instantservices313@gmail.com",
+    "address": "London, UK"
+  },
+  "services": [
+    "Car Parking Management",
+    "CCTV Operations",
+    "Door Supervision",
+    "Mall Security",
+    "Reception Concierge",
+    "Short Notice Services",
+    "Static / Mobile Patrol"
+  ],
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/share/15h6mkF5B3/",
+    "instagram": "https://www.instagram.com/iss_security_services_ltd/",
+    "linkedin": "https://www.linkedin.com/company/instant-support-services-iss/"
+  }
+}

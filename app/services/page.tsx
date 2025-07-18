@@ -7,101 +7,18 @@ import {
   FaClock,
   FaShieldAlt,
 } from "react-icons/fa";
+import siteInfo from "../../siteInfo.json";
 
 export default function Services() {
-  const services = [
-    {
-      icon: <FaCar className="text-4xl text-primary" />,
-      title: "Car Parking Management",
-      description:
-        "Professional parking management services including traffic control, payment collection, and security monitoring for car parks of all sizes.",
-      features: [
-        "Traffic flow management",
-        "Payment collection",
-        "Security monitoring",
-        "Customer assistance",
-        "Emergency response",
-      ],
-    },
-    {
-      icon: <FaVideo className="text-4xl text-primary" />,
-      title: "CCTV Operations",
-      description:
-        "24/7 CCTV monitoring and surveillance services with state-of-the-art equipment and trained operators.",
-      features: [
-        "24/7 monitoring",
-        "HD camera systems",
-        "Remote access",
-        "Incident recording",
-        "Real-time alerts",
-      ],
-    },
-    {
-      icon: <FaDoorOpen className="text-4xl text-primary" />,
-      title: "Door Supervision",
-      description:
-        "Licensed door supervisors providing security and customer service at bars, clubs, events, and venues.",
-      features: [
-        "Licensed personnel",
-        "Access control",
-        "Conflict resolution",
-        "Customer service",
-        "Emergency procedures",
-      ],
-    },
-    {
-      icon: <FaShoppingBag className="text-4xl text-primary" />,
-      title: "Mall Security",
-      description:
-        "Comprehensive security services for shopping centers and retail environments.",
-      features: [
-        "Patrol services",
-        "Incident response",
-        "Customer assistance",
-        "Loss prevention",
-        "Emergency coordination",
-      ],
-    },
-    {
-      icon: <FaConciergeBell className="text-4xl text-primary" />,
-      title: "Reception Concierge",
-      description:
-        "Professional reception and concierge services for corporate buildings, hotels, and residential complexes.",
-      features: [
-        "Visitor management",
-        "Mail handling",
-        "Customer service",
-        "Access control",
-        "Information assistance",
-      ],
-    },
-    {
-      icon: <FaClock className="text-4xl text-primary" />,
-      title: "Short Notice Services",
-      description:
-        "Rapid response security services available at short notice for urgent security requirements.",
-      features: [
-        "Quick deployment",
-        "Flexible scheduling",
-        "Emergency response",
-        "24/7 availability",
-        "Custom solutions",
-      ],
-    },
-    {
-      icon: <FaShieldAlt className="text-4xl text-primary" />,
-      title: "Static / Mobile Patrol",
-      description:
-        "Both static guard positions and mobile patrol services for comprehensive site security coverage.",
-      features: [
-        "Static guard posts",
-        "Mobile patrols",
-        "Regular checkpoints",
-        "Incident reporting",
-        "Flexible coverage",
-      ],
-    },
-  ];
+  const PhoneNumber = siteInfo.contact.phone;
+
+  // You may want to map siteInfo.services to your UI structure, or keep the hardcoded details if needed. For now, let's just use the names from siteInfo.services:
+  const services = siteInfo.services.map((service) => ({
+    icon: <FaShieldAlt className="text-4xl text-primary" />, // Use a generic icon or map specific ones if needed
+    title: service,
+    description: "", // Add descriptions if you want, or keep empty
+    features: [], // Add features if you want, or keep empty
+  }));
 
   return (
     <div className="pt-16">
@@ -178,7 +95,7 @@ export default function Services() {
             >
               Get Quote
             </a>
-            <a href="tel:+441234567890" className="btn-primary">
+            <a href={`tel:${PhoneNumber}`} className="btn-primary">
               Call Now
             </a>
           </div>

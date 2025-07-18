@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 
 export default function Policies() {
+  const PhoneNumber = "+441234567890";
   const policies = [
     {
       icon: <FaShieldAlt className="text-4xl text-primary" />,
@@ -241,7 +242,7 @@ export default function Policies() {
             >
               Contact Us
             </a>
-            <a href="tel:+441234567890" className="btn-primary">
+            <a href={`tel:${PhoneNumber}`} className="btn-primary">
               Call Now
             </a>
           </div>
