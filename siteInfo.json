@@ -1,6 +1,7 @@
 {
   "companyName": "Instant Secure Services Ltd.",
-  "companyLogo": "/images/logo.png",
+  "companyLogo": "/logo/logo.png",
+  "companyLogoDark": "/logo/logoDark.png",
   "contact": {
     "phone": "+44 744 5611726",
     "email": "instantservices313@gmail.com",

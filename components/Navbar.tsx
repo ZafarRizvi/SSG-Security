@@ -4,6 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
 import ThemeToggle from "./ThemeToggle";
+import siteInfo from "../siteInfo.json";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,8 +23,18 @@ const Navbar = () => {
       <div className="container-custom">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold text-primary">
-            SecurePro
+          <Link href="/" className="flex items-center space-x-2">
+            <Image
+              src={siteInfo.companyLogo}
+              alt="Logo"
+              width={100}
+              height={100}
+              className="w-12 h-12"
+              style={{ objectFit: "contain" }}
+            />
+            <span className="text-2xl font-bold text-primary">
+              {siteInfo.companyName}
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
